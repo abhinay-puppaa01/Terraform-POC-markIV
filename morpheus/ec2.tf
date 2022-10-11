@@ -1,5 +1,3 @@
-
-
 variable "access_key" {
   description = "The username of the user account used to access the Morpheus platform"
   type        = string
