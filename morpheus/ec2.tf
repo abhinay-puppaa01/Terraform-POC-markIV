@@ -8,8 +8,7 @@ variable "secret_key" {
   type        = string
 }
 variable "payload" {
-  type   = list
-  default = [{}]
+   default = [{}]
 }
 
 
