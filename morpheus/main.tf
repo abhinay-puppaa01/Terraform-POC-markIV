@@ -9,6 +9,7 @@ variable "secret_key" {
 }
 variable "payload" {
    default = [{}]
+   type = list
 }
 
 
