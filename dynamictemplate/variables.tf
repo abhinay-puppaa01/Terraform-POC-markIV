@@ -29,11 +29,6 @@ variable "instance_name" {
 default = "<%= customOptions.instance_name%>"
 }
 
-variable "tags" {
-  description = "tags"
-  type        = map
-default = "<%= customOptions.tags%>"
-}
 
 
 variable "availability_zone" {
@@ -44,16 +39,16 @@ default = "<%= customOptions.availability_zone%>"
 
 variable "subnet_id" {
   description = "subnet_id"
-  type        = list
+  type        = string
 default = "<%= customOptions.subnet_id%>"
 }
 variable "vpc_security_group_ids" {
   description = "vpc_security_group_ids"
   type        = list
-default = "<%= customOptions.vpc_security_group_ids%>"
+default = ["<%= customOptions.vpc_security_group_ids%>"]
 }
 variable "tags" {
   description = "tags"
   type        = map
-default = "<%= customOptions.tags%>"
+default = {"<%= customOptions.tags%>":""}
 }
