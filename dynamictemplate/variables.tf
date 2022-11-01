@@ -16,7 +16,7 @@ variable "secret_key" {
 variable "ami" {
   description = "Ami"
   type        = string
-default = "<%= customOptions.ami%>"
+default = "<%= customOptions.operating_system%>"
 }
 variable "instance_type" {
   description = "Instance Type"
