@@ -50,5 +50,5 @@ default = ["<%= customOptions.vpc_security_group_ids%>"]
 variable "tags" {
   description = "tags"
   type        = map
-default = {"<%= customOptions.tags%>":""}
+default = {"<%= customOptions.aws_tags%>":""}
 }
