@@ -34,7 +34,7 @@ default = "<%= customOptions.instance_name%>"
 variable "availability_zone" {
   description = "availability_zone"
   type        = string
-default = "<%= customOptions.availability_zone%>"
+default = "us-east-1a"
 }
 
 variable "subnet_id" {
