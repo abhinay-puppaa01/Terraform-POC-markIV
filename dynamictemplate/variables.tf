@@ -44,11 +44,11 @@ default = "<%= customOptions.subnet_id%>"
 }
 variable "vpc_security_group_ids" {
   description = "vpc_security_group_ids"
-  type        = list
-default = ["<%= customOptions.vpc_security_group_ids%>"]
+  type        = string
+default = "<%= customOptions.vpc_security_group_ids%>"
 }
 variable "tags" {
   description = "tags"
-  type        = map
-default = {"<%= customOptions.aws_tags%>":""}
+  type        = string
+default = "<%= customOptions.aws_tags%>"
 }
